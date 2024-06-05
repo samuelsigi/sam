@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>Registration - Vacuum Cleaner Website</title>
+</head>
+<body>
+  <header>
+    <h1>Registration to Book a Vacuum Cleaner</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form id="registrationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="type">Vacuum Cleaner Type:</label>
+      <select id="type" name="type">
+        <option value="upright">Upright</option>
+        <option value="canister">Canister</option>
+        <option value="robotic">Robotic</option>
+      </select>
+
+      <label for="budget">Budget:</label>
+      <input type="range" id="budget" name="budget" min="0" max="10000" step="50">
+      <label for="budget">low-high</label>
+      <table>
+        <caption>Rates</caption>
+        <tr>
+          <th>Model No</th>
+          <th>Color</th>
+          <th>Rate</th>
+        </tr>
+        <tr>
+          <td>VC100</td>
+          <td>Blue</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>VC200</td>
+          <td>Red</td>
+          <td>$200</td>
+        </tr>
+      </table>
+
+      <ul>
+        <li>Model No List
+          <ul>
+            <li>VC100</li>
+            <li>VC200</li>
+          </ul>
+        </li>
+        <li>Color List
+          <ul>
+            <li>Blue</li>
+            <li>Red</li>
+          </ul>
+        </li>
+      </ul>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Vacuum Cleaner Website</p>
+  </footer>
+</body>
+</html>
